@@ -15,7 +15,7 @@
 
     body {
       font-family: Arial, sans-serif;
-      background: #f5f1e8;
+      background: #f6f2e9;
       color: #333;
       line-height: 1.6;
     }
@@ -41,84 +41,148 @@
       background: #333;
       padding: 14px 10px;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 8px;
+      margin: 0 9px;
       font-size: 14px;
     }
 
     .hero {
-      padding: 65px 20px;
-      text-align: center;
       background: #fff9d9;
+      text-align: center;
+      padding: 70px 20px;
     }
 
     .hero h2 {
-      font-size: 36px;
+      font-size: 38px;
       margin-bottom: 15px;
     }
 
     .hero p {
       max-width: 700px;
       margin: auto;
-      color: #555;
       font-size: 17px;
+      color: #555;
     }
 
-    .button,
-    .whatsapp {
+    .button {
       display: inline-block;
       margin-top: 25px;
-      padding: 14px 26px;
+      padding: 14px 28px;
       background: #333;
       color: white;
       text-decoration: none;
-      border-radius: 6px;
+      border-radius: 7px;
       font-weight: bold;
     }
 
     section {
-      padding: 50px 20px;
+      padding: 55px 20px;
       max-width: 1100px;
       margin: auto;
     }
 
     section h2 {
       text-align: center;
+      font-size: 30px;
       margin-bottom: 30px;
-      font-size: 29px;
     }
 
     .about {
-      text-align: center;
       max-width: 800px;
       margin: auto;
+      text-align: center;
+      font-size: 17px;
     }
 
-    .categories {
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .product-image {
+      height: 190px;
+      background: #fff9d9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 65px;
+    }
+
+    .product-info {
+      padding: 22px 18px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #333;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      margin-bottom: 10px;
+    }
+
+    .product h3 {
+      font-size: 21px;
+      margin-bottom: 8px;
+    }
+
+    .product p {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .order-button {
+      display: inline-block;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .services {
+      background: #fff;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .service-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
     }
 
-    .card {
-      background: white;
-      padding: 28px 20px;
-      border-radius: 10px;
+    .service {
+      background: #fff9d9;
+      padding: 25px;
       text-align: center;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      border-radius: 10px;
     }
 
-    .card h3 {
+    .service span {
+      font-size: 35px;
+      display: block;
       margin-bottom: 10px;
-      font-size: 20px;
-    }
-
-    .card p {
-      color: #555;
     }
 
     .contact {
@@ -128,11 +192,18 @@
     }
 
     .contact p {
-      margin: 10px 0;
+      margin: 9px 0;
     }
 
     .whatsapp {
+      display: inline-block;
       margin-top: 20px;
+      padding: 14px 25px;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 7px;
+      font-weight: bold;
     }
 
     footer {
@@ -149,7 +220,7 @@
       }
 
       .hero h2 {
-        font-size: 29px;
+        font-size: 30px;
       }
 
       nav a {
@@ -171,6 +242,7 @@
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#products">Products</a>
+    <a href="#services">Services</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -191,71 +263,212 @@
     <div class="about">
       <p>
         Raph Empire Cosmetics is a wholesale and retail skincare business
-        offering a wide range of quality skincare products for individuals,
+        offering a wide range of skincare products for individuals,
         retailers and resellers.
       </p>
 
       <br>
 
       <p>
-        We stock products from popular American, UK, Korean and other
-        international skincare brands.
+        We provide access to skincare products from American, UK, Korean
+        and other international brands.
       </p>
     </div>
   </section>
 
   <section id="products">
-    <h2>Our Products</h2>
+    <h2>Featured Products</h2>
 
-    <div class="categories">
+    <div class="products">
 
-      <div class="card">
-        <h3>Body Lotions</h3>
-        <p>Quality lotions and body moisturizers for different skincare needs.</p>
+      <div class="product">
+        <div class="product-image">🧴</div>
+
+        <div class="product-info">
+          <span class="tag">BODY CARE</span>
+
+          <h3>Palmers</h3>
+
+          <p>
+            Palmers skincare products available for wholesale and retail.
+          </p>
+
+          <a class="order-button"
+             href="https://wa.me/2347050491343"
+             target="_blank">
+             Order on WhatsApp
+          </a>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>Face Care</h3>
-        <p>Face creams, cleansers, toners, serums and other facial products.</p>
+      <div class="product">
+        <div class="product-image">🧴</div>
+
+        <div class="product-info">
+          <span class="tag">BODY CARE</span>
+
+          <h3>Vaseline</h3>
+
+          <p>
+            Quality body care products available for personal use and resale.
+          </p>
+
+          <a class="order-button"
+             href="https://wa.me/2347050491343"
+             target="_blank">
+             Order on WhatsApp
+          </a>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>Body Oils</h3>
-        <p>Various body and skincare oils from international brands.</p>
+      <div class="product">
+        <div class="product-image">✨</div>
+
+        <div class="product-info">
+          <span class="tag">FACE CARE</span>
+
+          <h3>Face Care</h3>
+
+          <p>
+            Face creams, cleansers, toners, serums and other facial products.
+          </p>
+
+          <a class="order-button"
+             href="https://wa.me/2347050491343"
+             target="_blank">
+             Order on WhatsApp
+          </a>
+        </div>
       </div>
 
-      <div class="card">
+      <div class="product">
+        <div class="product-image">💧</div>
+
+        <div class="product-info">
+          <span class="tag">SKINCARE</span>
+
+          <h3>Body Oils</h3>
+
+          <p>
+            A range of skincare and body oils from international brands.
+          </p>
+
+          <a class="order-button"
+             href="https://wa.me/2347050491343"
+             target="_blank">
+             Order on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-image">🧴</div>
+
+        <div class="product-info">
+          <span class="tag">MOISTURIZERS</span>
+
+          <h3>Body Lotions</h3>
+
+          <p>
+            Quality lotions and moisturizers for different skincare needs.
+          </p>
+
+          <a class="order-button"
+             href="https://wa.me/2347050491343"
+             target="_blank">
+             Order on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-image">🌎</div>
+
+        <div class="product-info">
+          <span class="tag">INTERNATIONAL</span>
+
+          <h3>International Brands</h3>
+
+          <p>
+            American, UK, Korean and other international skincare products.
+          </p>
+
+          <a class="order-button"
+             href="https://wa.me/2347050491343"
+             target="_blank">
+             Order on WhatsApp
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>What We Offer</h2>
+
+    <div class="service-grid">
+
+      <div class="service">
+        <span>📦</span>
         <h3>Wholesale</h3>
-        <p>Bulk skincare products available for retailers and resellers.</p>
+        <p>
+          Bulk skincare products for retailers and resellers.
+        </p>
       </div>
 
-      <div class="card">
+      <div class="service">
+        <span>🛍️</span>
         <h3>Retail</h3>
-        <p>Individual products available for personal skincare routines.</p>
+        <p>
+          Individual skincare products for personal use.
+        </p>
       </div>
 
-      <div class="card">
+      <div class="service">
+        <span>🌎</span>
         <h3>International Brands</h3>
-        <p>American, UK, Korean and other international skincare products.</p>
+        <p>
+          American, UK, Korean and other international products.
+        </p>
+      </div>
+
+      <div class="service">
+        <span>💬</span>
+        <h3>Easy Ordering</h3>
+        <p>
+          Contact us directly on WhatsApp to place your order.
+        </p>
       </div>
 
     </div>
   </section>
 
   <section class="contact" id="contact">
-    <h2>Contact Raph Empire Cosmetics</h2>
 
-    <p><strong>Location:</strong> Kano Plaza, Tradefair Complex</p>
+    <h2>Contact Raph Empire</h2>
 
-    <p><strong>Phone:</strong> 07050491343</p>
+    <p>
+      <strong>Location:</strong>
+      Kano Plaza, Tradefair Complex
+    </p>
 
-    <p><strong>Instagram:</strong> @Raph_Empire_Cosmetics</p>
+    <p>
+      <strong>Phone:</strong>
+      07050491343
+    </p>
+
+    <p>
+      <strong>Instagram:</strong>
+      @Raph_Empire_Cosmetics
+    </p>
 
     <a class="whatsapp"
        href="https://wa.me/2347050491343"
        target="_blank">
        Chat With Us on WhatsApp
     </a>
+
   </section>
 
   <footer>
@@ -264,4 +477,4 @@
   </footer>
 
 </body>
-    </html>
+</html>
