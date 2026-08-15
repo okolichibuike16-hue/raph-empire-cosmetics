@@ -22,76 +22,79 @@
 
     header {
       background: #fff9d9;
-      padding: 20px;
+      padding: 25px 15px;
       text-align: center;
       border-bottom: 1px solid #ddd;
     }
 
     header h1 {
-      font-size: 28px;
-      color: #333;
+      font-size: 30px;
+      margin-bottom: 5px;
     }
 
     header p {
-      margin-top: 5px;
       color: #666;
+      font-size: 15px;
     }
 
     nav {
       background: #333;
-      padding: 12px;
+      padding: 14px 10px;
       text-align: center;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0 8px;
       font-size: 14px;
     }
 
     .hero {
-      padding: 55px 20px;
+      padding: 65px 20px;
       text-align: center;
       background: #fff9d9;
     }
 
     .hero h2 {
-      font-size: 34px;
+      font-size: 36px;
       margin-bottom: 15px;
     }
 
     .hero p {
-      max-width: 650px;
+      max-width: 700px;
       margin: auto;
       color: #555;
+      font-size: 17px;
     }
 
-    .button {
+    .button,
+    .whatsapp {
       display: inline-block;
       margin-top: 25px;
-      padding: 13px 25px;
+      padding: 14px 26px;
       background: #333;
       color: white;
       text-decoration: none;
       border-radius: 6px;
+      font-weight: bold;
     }
 
     section {
-      padding: 45px 20px;
+      padding: 50px 20px;
       max-width: 1100px;
       margin: auto;
     }
 
     section h2 {
       text-align: center;
-      margin-bottom: 25px;
-      font-size: 28px;
+      margin-bottom: 30px;
+      font-size: 29px;
     }
 
     .about {
       text-align: center;
-      max-width: 750px;
+      max-width: 800px;
       margin: auto;
     }
 
@@ -103,7 +106,7 @@
 
     .card {
       background: white;
-      padding: 25px;
+      padding: 28px 20px;
       border-radius: 10px;
       text-align: center;
       box-shadow: 0 3px 12px rgba(0,0,0,0.08);
@@ -111,15 +114,25 @@
 
     .card h3 {
       margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .card p {
+      color: #555;
     }
 
     .contact {
       background: #fff9d9;
       text-align: center;
+      max-width: none;
     }
 
     .contact p {
-      margin: 8px 0;
+      margin: 10px 0;
+    }
+
+    .whatsapp {
+      margin-top: 20px;
     }
 
     footer {
@@ -130,14 +143,19 @@
       font-size: 14px;
     }
 
-    .whatsapp {
-      background: #333;
-      color: white;
-      padding: 14px 25px;
-      display: inline-block;
-      text-decoration: none;
-      border-radius: 6px;
-      margin-top: 15px;
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 25px;
+      }
+
+      .hero h2 {
+        font-size: 29px;
+      }
+
+      nav a {
+        margin: 0 5px;
+        font-size: 13px;
+      }
     }
   </style>
 </head>
@@ -173,7 +191,7 @@
     <div class="about">
       <p>
         Raph Empire Cosmetics is a wholesale and retail skincare business
-        offering a wide range of skincare products for individuals,
+        offering a wide range of quality skincare products for individuals,
         retailers and resellers.
       </p>
 
@@ -225,13 +243,13 @@
   </section>
 
   <section class="contact" id="contact">
-    <h2>Contact Us</h2>
+    <h2>Contact Raph Empire Cosmetics</h2>
 
     <p><strong>Location:</strong> Kano Plaza, Tradefair Complex</p>
 
     <p><strong>Phone:</strong> 07050491343</p>
 
-    <p><strong>Social:</strong> @Raph_Empire_Cosmetics</p>
+    <p><strong>Instagram:</strong> @Raph_Empire_Cosmetics</p>
 
     <a class="whatsapp"
        href="https://wa.me/2347050491343"
@@ -246,4 +264,4 @@
   </footer>
 
 </body>
-</html>
+    </html>
