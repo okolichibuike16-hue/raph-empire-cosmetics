@@ -227,6 +227,317 @@
         margin: 0 5px;
         font-size: 13px;
       }
+    }/* ===== RAPH EMPIRE PREMIUM DESIGN ===== */
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #faf8f2;
+    color: #292725;
+}
+
+/* HEADER */
+header {
+    background: #faf8f2;
+    padding: 22px 18px;
+    border-bottom: 1px solid #e5dfd2;
+}
+
+header h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    color: #292725;
+}
+
+header p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #777064;
+}
+
+/* NAVIGATION */
+nav {
+    background: #292725;
+    padding: 13px 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fffdf7;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #e8d9aa;
+}
+
+/* SECTIONS */
+section {
+    padding: 70px 20px;
+}
+
+section h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 35px;
+    color: #292725;
+}
+
+/* HERO */
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(
+        rgba(30, 28, 24, 0.35),
+        rgba(30, 28, 24, 0.35)
+    );
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 48px;
+    max-width: 700px;
+    margin: 0 auto 18px;
+}
+
+.hero p {
+    color: white;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 28px;
+}
+
+/* BUTTONS */
+button,
+.btn,
+.hero a {
+    display: inline-block;
+    background: #292725;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover,
+.btn:hover,
+.hero a:hover {
+    background: #8a7650;
+}
+
+/* PRODUCT GRID */
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* PRODUCT CARD */
+.product {
+    background: #ffffff;
+    border: 1px solid #eee7dc;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.product-image {
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f6f1;
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.4s;
+}
+
+.product:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.product-info {
+    padding: 5px 5px 12px;
+}
+
+.product-info h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product-info p {
+    color: #777;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.price {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 12px;
+    color: #292725;
+}
+
+.tag {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    background: #e8dcc0;
+    color: #4b4337;
+    padding: 6px 9px;
+}
+
+/* ABOUT */
+#about {
+    background: #f1ede4;
+    text-align: center;
+}
+
+#about p {
+    max-width: 750px;
+    margin: 0 auto 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    color: #555;
+}
+
+/* FEATURES */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.feature {
+    background: white;
+    padding: 35px 25px;
+    text-align: center;
+    border: 1px solid #eee7dc;
+}
+
+.feature span {
+    font-size: 30px;
+}
+
+.feature h3 {
+    font-size: 21px;
+    margin: 15px 0;
+}
+
+.feature p {
+    font-family: Arial, sans-serif;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* CONTACT */
+.contact {
+    background: #292725;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    color: white;
+}
+
+.contact p {
+    font-family: Arial, sans-serif;
+    color: #ddd;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 11px;
+    }
+
+    section {
+        padding: 50px 15px;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .product {
+        padding: 10px;
+    }
+
+    .product-image {
+        height: 190px;
+    }
+
+    .product-info h3 {
+        font-size: 16px;
+    }
+
+    .hero {
+        min-height: 430px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
     }
   </style>
 </head>
