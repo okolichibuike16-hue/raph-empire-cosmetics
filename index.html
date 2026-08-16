@@ -538,6 +538,53 @@ button:hover,
     .hero h2 {
         font-size: 34px;
     }
+    }/* PREMIUM MOBILE HERO FIX */
+@media (max-width: 600px) {
+
+  .hero {
+    min-height: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 24px;
+    background:
+      linear-gradient(rgba(35, 32, 28, 0.48), rgba(35, 32, 28, 0.48)),
+      url("https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=1200&q=85")
+      center/cover no-repeat;
+  }
+
+  .hero h2 {
+    color: white;
+    font-size: 42px;
+    line-height: 1.05;
+    max-width: 360px;
+    margin: 0 auto 20px;
+  }
+
+  .hero p {
+    color: white;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 340px;
+    margin: 0 auto 30px;
+  }
+
+  .hero a,
+  .hero button {
+    display: inline-block;
+    background: #927c55;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    border: none;
+  }
+
     }
   </style>
 </head>
